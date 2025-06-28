@@ -14,12 +14,14 @@ html {
 }
 
 body {
-  font-family: 'Roboto', Arial, sans-serif;
+  font-family: 'Comfortaa', sans-serif;
   color: var(--text);
   background: var(--background);
   margin: 0;
   padding: 0;
 }
+
+a {text-decoration: none;}
 
 header {
   position: relative;
@@ -48,12 +50,12 @@ header {
   text-align: center;
 }
 .hero-content h1 {
-  font-family: 'Montserrat', sans-serif;
   font-size: clamp(2.5rem, 6vw, 4rem);
   letter-spacing: 2px;
   margin-bottom: 0.5rem;
 }
 .hero-content .subtitle {
+  font-family: 'Orbitron', sans-serif;
   font-size: 1.3rem;
   color: #d0e3fa;
   margin-bottom: 1.5rem;
@@ -75,6 +77,20 @@ header {
   box-shadow: 0 4px 30px rgba(230,57,70,0.15);
 }
 
+.play-btn {
+  display: inline-block;
+  background: #002693;
+  color: var(--foreground);
+  font-weight: bold;
+  padding: 0.75em 2.2em;
+  border-radius: 2em;
+  border: none;
+  text-decoration: none;
+  font-size: 1.1rem;
+  transition: background var(--transition), box-shadow var(--transition);
+  box-shadow: 0 2px 12px rgba(230,57,70,0.1);
+}
+
 .hero-bg {
   position: absolute;
   inset: 0;
@@ -84,7 +100,6 @@ header {
   opacity: .5;
 }
 
-/* Animated shapes */
 .hero-shapes {
   position: absolute;
   inset: 0;
@@ -157,7 +172,7 @@ section {
   padding: 2.5rem 2rem;
 }
 section h2 {
-  font-family: 'Montserrat', sans-serif;
+  font-family: 'Comfortaa', sans-serif;
   margin-top: 0;
   font-size: 2rem;
   color: var(--primary);
@@ -276,3 +291,43 @@ footer {
     padding: 1.2rem 0.6rem 2rem 0.6rem;
   }
 }
+
+.github-link {
+	color: white;
+	transition: color 0.6s;
+}
+
+.github-link:hover {
+	color: #ffe27f;
+}
+
+
+.social-container {
+    display: flex;
+    gap: 20px;
+}
+
+.social-link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: #ffffff;
+    color: #333;
+    text-decoration: none;
+    font-size: 24px;
+    transition: transform 0.3s, box-shadow 0.3s;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.social-link:hover {
+    transform: scale(1.1);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.social-link.x { background-color: #000000; color: white; }
+.social-link.twitch { background-color: #6441a5; color: white; }
+.social-link.tumblr { background-color: #35465c; color: white; }
+.social-link.mastodon { background-color: #6364FF; color: white; }
