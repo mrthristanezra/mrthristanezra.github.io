@@ -32,6 +32,12 @@ header {
 	line-height: 27px;
 }
 
+.game-image {
+	width: 220px;
+	height: 105px;
+	border-radius: 10px;
+}
+
 .hero {
   position: relative;
   background: linear-gradient(120deg, var(--primary) 80%, var(--accent) 120%);
